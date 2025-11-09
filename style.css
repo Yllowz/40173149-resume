@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&display=swap');
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  direction: rtl;
+}
+
+header, main, aside, footer {
+  padding: 1.5rem;
+}
+
+header {
+    background: linear-gradient(135deg, #005b96, #0575e6);
+    color: white;
+    text-align: center;
+    border-bottom: 4px solid #004d8b;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 2rem 1rem;
+  }
+  
+  header h1 {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 2rem;
+  }
+  
+  header p {
+    margin: 0.6rem 0;
+    font-size: 1.1rem;
+  }
+  
+  header p strong {
+    position: relative;
+    padding-right: 1.2rem;
+  }
+  
+  header p strong::before {
+    content: "•";
+    position: absolute;
+    right: 0;
+    color: #ffd166;
+    font-size: 1.2rem;
+    line-height: 1;
+    top: 0;
+  }
+
+header p:first-of-type {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    color: #fff9c4;
+  }
+  
+  
+  header a {
+    color: #ffd166;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+    color: #fff9c4;
+  }
+  
+
+table[role="presentation"] {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+aside {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+main {
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #005b96;
+  border-right: 4px solid #0575e6;
+  padding-right: 0.5rem;
+}
+
+h3 {
+  color: #333;
+  margin-top: 1rem;
+}
+
+dl dt {
+  margin-top: 1rem;
+  color: #004d8b;
+  font-weight: 600;
+}
+
+dl dd p,
+#contact p {
+  position: relative;
+  padding-right: 1rem;
+  margin: 0.4rem 0;
+}
+
+dl dd p::before,
+#contact p::before {
+  content: "•";
+  position: absolute;
+  right: 0;
+  color: #0575e6;
+  font-size: 1.2rem;
+  line-height: 1;
+  top: 0;
+}
+
+progress {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #0575e6;
+}
+
+a {
+  color: #0575e6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+details summary {
+  cursor: pointer;
+  color: #005b96;
+  font-weight: 600;
+}
+
+details ul {
+  background: #f3f6f9;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  table[role="presentation"] {
+    display: block;
+  }
+  td {
+    display: block;
+    width: 100% !important;
+  }
+  aside, main {
+    margin-bottom: 1.5rem;
+  }
+}
+
+section:hover h2 {
+  color: #004d8b;
+  transition: color 0.3s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
